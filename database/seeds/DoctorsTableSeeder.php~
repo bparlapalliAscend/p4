@@ -1,0 +1,42 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class DoctorsTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        DB::table('doctors')->insert([
+        'created_at' => Carbon\Carbon::now()->toDateTimeString(),
+        'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
+        'firstname' => 'Thejam',
+        'lastname' => 'Parlapalli',
+        'email' => 'Thejam.parlapalli@abc.com',
+        'password' => 'testpass1',
+        'Speciality_id' => 1,
+    ]);
+       DB::table('books')->insert([
+        'created_at' => Carbon\Carbon::now()->toDateTimeString(),
+        'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
+        'firstname' => 'anil',
+        'lastname' => 'Kanadh',
+        'email' => 'anil.k@abc.com',
+        'password' => 'testpass2',
+        'Speciality_id' => 2,
+    ]);
+           DB::table('books')->insert([
+        'created_at' => Carbon\Carbon::now()->toDateTimeString(),
+        'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
+        'firstname' => 'prahlad',
+        'lastname' => 'rao',
+        'email' => 'prahlad.rao@abc.com',
+        'password' => 'testpass3',
+        'Speciality_id' => 1,
+    ]);
+    }
+}

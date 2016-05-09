@@ -1,0 +1,17 @@
+<?php
+namespace App\Http\Controllers;
+
+use App\Http\Controllers\Controller;
+
+class HomeController extends Controller {
+	
+	function getIndex() {
+		 if(\Auth::check()) {
+            return redirect('/showpatients');
+        }
+			  return view('home.landing');
+	}
+	
+}
+
+?>

@@ -1,0 +1,26 @@
+@extends('layouts.master')
+
+
+@section('title')
+ 		Vaaidya Home
+@stop
+
+@section('content')
+ 
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Track your clients Progress</h3>
+      
+      <p><a href="/addpatient">Add Patient</a></p>
+    </div>
+    <div class="col-md-6">
+       <h3>Generate Fake Users</h3>
+      <p>You can generate as many users as you need - click on the link to get sarted</p>
+      <p><a href="/user">Go to User Generator page</a></p>
+    </div>
+  </div>
+
+  
+ @stop
+
+  
