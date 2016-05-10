@@ -9,26 +9,6 @@
  
   <div class='content'>
 
-  		
-		<form method='POST' action='/addpatient'>
-		 	<div class="form-group">
-  			   {{ csrf_field() }}
- 			<label for="firstname">First Name</label>
- 			<input type="text" name="firstname" value="{{ old( 'firstname')}}">
- 			
- 			<label for="lastname">Last Name</label>
- 			<input type="text" name="lastname" value="{{ old( 'lastname' )}}">
- 			
- 			<label for="description">Description of Patient's health issue</label>
- 			
- 			<textarea rows="4" cols="50" name="description">
-					{{ old( 'description' )}}
-			</textarea>
- 			
- 			
- 			<input type='submit' value='Submit'>
- 		   </div>			
-		</form>  
 
 
 <div class="row">

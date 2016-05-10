@@ -4,7 +4,7 @@
 
 
 @section('title')
- 		Create 
+ 		Delete Patient {{$patient->firstname}}, {{$patient->lastname}}
 @stop
 
 @section('content')
@@ -17,7 +17,7 @@
       <div class="panel panel-default">
         <div class="panel-heading clearfix">
           <i class="icon-calendar"></i>
-          <h3 class="panel-title">Are you sure you want to delete this patient?</h3>
+          <h3 class="panel-title">Are you sure you want to delete this patient {{$patient->firstname}}, {{$patient->lastname}}?</h3>
         </div>
        
         <div class="panel-body form-horizontal row-border">

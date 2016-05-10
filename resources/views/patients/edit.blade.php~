@@ -21,7 +21,7 @@
         <div class="panel-body">
           <form class="form-horizontal row-border"  method='POST' action='/editpatient'>
             {{ csrf_field() }}
-            <input type="hidden" name="" value="">
+            <input type="hidden" name="id" value="{{$patient->id}}">
             <div class="form-group">
               <label class="col-md-2 control-label">Firstname</label>
               <div class="col-md-10">

@@ -56,6 +56,12 @@ Route::get('/', function () {
 	
 					// Show a Patients record
 					Route::get('/showpatients/{id}', 'PatientController@getPatientRecords');	
+					Route::get('/showpatients/addnote/{id}', 'PatientController@getAddPatientRecords');	
+					Route::post('/showpatients/addnote/{id}', 'PatientController@doAddPatientRecords');	
+					Route::get('/showpatients/{pid}/editnote/{nid}', 'PatientController@getEditPatientRecords');	
+					Route::post('/showpatients/{pid}/editnote/{nid}', 'PatientController@doEditPatientRecords');	
+					Route::get('/showpatients/{pid}/confirmdeletenote/{nid}', 'PatientController@getConfirmDeleteNote');	
+					Route::get('/showpatients/{pid}/deletenote/{nid}', 'PatientController@doDeleteNote');	
    		
 	});
 	

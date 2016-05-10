@@ -2,7 +2,7 @@
 
 
 @section('title')
- 		Create 
+ 		List of Patients
 @stop
 
 
@@ -16,6 +16,8 @@
 									<th>Date Added</th>			
 									<th>Associated Doctor</th>	
 									<th>Edit Patient</th>	
+									<th>Show the Paitent Notes</th>	
+									<th>Add note today</th>	
      							</tr>
      			
 						   @foreach ($patients as $patient) 
@@ -25,6 +27,8 @@
 								 		 <td>{{$patient->created_at}}</td> 
 								 		 <td>{{$patient->doctor->name}}</td> 
 								 		 <td><a href="\editpatient\{{$patient->id}}"> Edit..</a></td> 
+								 		 <td><a href="\showpatients\{{$patient->id}}"> List Notes</a></td> 
+								 		  <td><a href="\showpatients\addnote\{{$patient->id}}"> Add Note</a></td> 
 									</tr>		
 		 					 @endforeach    
      					</table>

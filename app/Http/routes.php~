@@ -49,13 +49,20 @@ Route::get('/', function () {
 					Route::post('/editpatient/{id?}', ['uses' =>'PatientController@doEditPatient']);	
 					
 					Route::get('/editpatient/confirmdelete/{id?}', 'PatientController@getConfirmDelete');
-					Route::get('/editpatient/delete/{id?}', 'PatientController@getDoDelete');
+					Route::get('/editpatient/delete/{id?}', 'PatientController@doDelete');
 	
 					// List of patients
 					Route::get('/showpatients', 'PatientController@getPatients');	
 	
 					// Show a Patients record
 					Route::get('/showpatients/{id}', 'PatientController@getPatientRecords');	
+					Route::get('/showpatients/addnote/{id}', 'PatientController@getAddPatientRecords');	
+					Route::post('/showpatients/addnote/{id}', 'PatientController@doAddPatientRecords');	
+					Route::get('/showpatients/{pid}/editnote/{nid}', 'PatientController@getEditPatientRecords');	
+					Route::post('/showpatients/{pid}/editnote/{nid}', 'PatientController@doEditPatientRecords');	
+					Route::get('/showpatients/{pid}/confirmdeletenote/{nid}', 'PatientController@getConfirmDeleteNote');	
+					Route::post('/showpatients/{pid}/deletenote', 'PatientController@doDeleteNote');	
+					Route::get('/showpatients/{pid}/deletenote/{nid}', 'PatientController@doDeleteNote');	
    		
 	});
 	

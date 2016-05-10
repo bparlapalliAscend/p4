@@ -2,7 +2,7 @@
 
 
 @section('title')
- 		Create 
+ 		Create Patient
 @stop
 
 @section('content')

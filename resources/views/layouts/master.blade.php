@@ -6,6 +6,8 @@
         @yield('title','Developers Best Friend')
     </title>
 		  <link href="/assets/css/navbar.css" type='text/css' rel='stylesheet'>
+		  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   		 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 		  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type='text/css' property='stylesheet'>
     <meta charset='utf-8'>
 
@@ -17,7 +19,7 @@
 <body>
 <div class="container">
 @if(Session::get('flash_message') != null)
-    <div class='flash_message'>{{ Session::get('flash_message') }}</div>
+    <div class='alert alert-warning'>{{ Session::get('flash_message') }}</div>
 @endif
 <div id="wrap">
  	<div id="main" class="container clear-top">
