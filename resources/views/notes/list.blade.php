@@ -31,7 +31,7 @@
       </h4>
     </div>
     <div id="collapse{{$note->id}}" class="panel-collapse collapse">
-      <div class="panel-body" id="notelistnote">{{$note->note}}</div>
+      <div class="panel-body" id="notelistnote{{$note->id}}">{{$note->note}}</div>
       <div class="panel-body text-center">
       				<a href="/showpatients/{{$patient->id}}/editnote/{{$note->id}}" class="btn btn-warning" role="button">Edit Note</a>
       				<a href="/showpatients/{{$patient->id}}/confirmdeletenote/{{$note->id}}" class="btn btn-danger" role="button">Delete Note</a>		
