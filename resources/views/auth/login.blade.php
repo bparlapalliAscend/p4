@@ -20,15 +20,15 @@
         </div>
         
         <div class="panel-body">
-          <form class="form-inline" role="form"  method='POST' action='/login'>
+          <form class="form-inline" method='POST' action='/login'>
              {{ csrf_field() }}
             <div class="form-group">
-              <label class="sr-only" for="exampleInputEmail2">Email address</label>
-              <input type="email" class="form-control" name= "email"  placeholder="Enter email" value="{{ old('email')}}">
+              <label class="sr-only" for="email">Email address</label>
+              <input type="email" class="form-control" name= "email" id="email"  placeholder="Enter email" value="{{ old('email')}}">
             </div>
             <div class="form-group">
-              <label class="sr-only" for="exampleInputPassword2">Password</label>
-              <input type="password" class="form-control" name="password"  placeholder="Password" value="{{ old('password')}}">
+              <label class="sr-only" for="password">Password</label>
+              <input type="password" class="form-control" name="password"  id="password"  placeholder="Password" value="{{ old('password')}}">
             </div>
             <div class="checkbox">
               <label>

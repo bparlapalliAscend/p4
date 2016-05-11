@@ -17,24 +17,24 @@
         </div>
         
         <div class="panel-body">
-          <form class="form-horizontal row-border" role="form"  method='POST' action='/register'>
+          <form class="form-horizontal row-border"  method='POST' action='/register'>
             {!! csrf_field() !!}
               <div class="form-group">
               <label class="col-md-2 control-label" for="name">Name</label>
                <div class="col-md-10">
-              <input type="text" class="form-control" name= "name"  placeholder="Minimum 3 chars" value="{{ old('name')}}">
+              <input type="text" class="form-control" name= "name" id="name"  placeholder="Minimum 3 chars" value="{{ old('name')}}">
               </div>
             </div>
             <div class="form-group">
               <label class="col-md-2 control-label" for="email">Email</label>
                <div class="col-md-10">
-              <input type="email" class="form-control" name= "email"  placeholder="Enter email" value="{{ old('email')}}">
+              <input type="email" class="form-control" name= "email"  id="email" placeholder="Enter email" value="{{ old('email')}}">
               </div>
             </div>
 				   <div class="form-group">
               <label class="col-md-2 control-label" for="speciality_id">Speciality ID</label>
                <div class="col-md-10">
-               <select class="selectpicker form-control" name="speciality_id">
+               <select class="selectpicker form-control" name="speciality_id" id="speciality_id">
                <option value="">Select a Speciality</option>
               @foreach ($specialityList as $speciality_id => $speciality_name)             
  						 <option value="{{$speciality_id}}">{{$speciality_name}}</option> 						 
@@ -46,13 +46,13 @@
             <div class="form-group">
               <label class="col-md-2 control-label" for="password">Password</label>
                <div class="col-md-10">
-              <input type="password" class="form-control" name="password" >
+              <input type="password" class="form-control" name="password" id="password">
               </div>
             </div>
              <div class="form-group">
               <label class="col-md-2 control-label" for="password_confirmation">Confirm Password</label>
               <div class="col-md-10">
-              <input type="password" class="form-control" name="password_confirmation"  >
+              <input type="password" class="form-control" name="password_confirmation"  id="password_confirmation">
             </div>
      			</div>
             <button type="submit" class="btn btn-primary" title="">Register</button>
