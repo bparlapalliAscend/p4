@@ -9,7 +9,7 @@
  <div class="jumbotron">
       <div class="container">
         <h1>Vaaidya - the record keeper!</h1>
-        <p>This website is a tool for doctors to keeo track of their diagnoses for their patients. Use the site to create patients, edit patient details, add notes for patients, edit notes and easily come back to keep track of such notes.</p>
+        <p>This website is a tool for doctors to keep track of their diagnoses for their patients. Use the site to create patients, edit patient details, add notes for patients, edit notes and easily retreive patient notes.</p>
        
       </div>
     </div>
