@@ -27,7 +27,7 @@ class PatientnotesTableSeeder extends Seeder
         			'created_at' =>Carbon\Carbon::now()->toDateTimeString(),
         			'updated_at' =>Carbon\Carbon::now()->toDateTimeString(),
         			'note'=>'patient has complained of chest pain',
-        			'patient_id'=>4       
+        			'patient_id'=>3     
         ]);
     }
 }
