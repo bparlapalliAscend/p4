@@ -35,7 +35,7 @@
               <label class="col-md-2 control-label" for="speciality_id">Speciality ID</label>
                <div class="col-md-10">
                <select class="selectpicker form-control" name="speciality_id">
-               <option value="">Select a Speciality</option>
+               <option valu="">Select a Speciality</option>
               @foreach ($specialityList as $speciality_id => $speciality_name)             
  						 <option value="{{$speciality_id}}">{{$speciality_name}}</option> 						 
  				 @endforeach
