@@ -7,6 +7,7 @@
     </title>
 		  <link href="/assets/css/navbar.css" type='text/css' rel='stylesheet'>
 		  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		     	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
    		 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 		  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type='text/css' property='stylesheet'>
     <meta charset='utf-8'>
@@ -56,14 +57,14 @@
          @yield('content')
     </section>
 
-   	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 		
 
   		  {{-- Yield any page specific JS files or anything else you might want at the end of the body --}}
   	  @yield('body')
 	</div>
 </div>
-
+<hr>
  <footer>
         <p>© Vaaidya 2016</p>
       </footer>
