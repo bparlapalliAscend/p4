@@ -16,6 +16,7 @@
   <div class="panel-heading clearfix">
           <i class="icon-calendar"></i>
           <h3 class="panel-title">Patient Notes for {{$patient->firstname}},  {{$patient->lastname}}</h3>
+          <h4 class="panel-title">{{$patient->description}}</h4>
         </div>      
   
   @if(isset($patientnotes) && $patientnotes!=null)
@@ -25,7 +26,7 @@
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{$note->id}}">
+        <a  class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse{{$note->id}}">
         {{$note->created_at}}</a>
       </h4>
     </div>
