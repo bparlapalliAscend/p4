@@ -63,6 +63,10 @@
   	  @yield('body')
 	</div>
 </div>
+<hr>
+ <footer>
+        <p>© Vaaidya 2016</p>
+      </footer>
 </div>
 
 
