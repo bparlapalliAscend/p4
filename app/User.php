@@ -12,7 +12,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','speciality_id',
     ];
 
     /**
@@ -26,5 +26,9 @@ class User extends Authenticatable
     
     public function patients() {
 		return $this->hasMany('\App\Patient');    
+    }
+    
+    public function speciality() {
+		return $this->belongsTo('\App\Speciality');    
     }
 }

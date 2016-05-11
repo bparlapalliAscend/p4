@@ -34,7 +34,13 @@
 				   <div class="form-group">
               <label class="col-md-2 control-label" for="speciality_id">Speciality ID</label>
                <div class="col-md-10">
-              <input type="text" class="form-control" name= "speciality_id"  placeholder="speciality id here" value="{{ old('speciality_id')}}">
+               <select class="selectpicker form-control" name="speciality_id">
+               <option >Select a Speciality</option>
+              @foreach ($specialityList as $speciality_id => $speciality_name)             
+ 						 <option value="{{$speciality_id}}">{{$speciality_name}}</option> 						 
+ 				 @endforeach
+				</select>
+
               </div>
             </div>                       
             <div class="form-group">

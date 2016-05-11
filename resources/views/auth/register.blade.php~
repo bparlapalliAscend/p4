@@ -34,7 +34,13 @@
 				   <div class="form-group">
               <label class="col-md-2 control-label" for="speciality_id">Speciality ID</label>
                <div class="col-md-10">
-              <input type="text" class="form-control" name= "speciality_id"  placeholder="speciality id here" value="{{ old('speciality_id')}}">
+               <select class="selectpicker form-control" name="speciality_id">
+               <option value="">Select a Speciality</option>
+              @foreach ($specialityList as $speciality_id => $speciality_name)             
+ 						 <option value="{{$speciality_id}}">{{$speciality_name}}</option> 						 
+ 				 @endforeach
+				</select>
+
               </div>
             </div>                       
             <div class="form-group">
@@ -44,9 +50,9 @@
               </div>
             </div>
              <div class="form-group">
-              <label class="col-md-2 control-label" for="confirm_password">Confirm Password</label>
+              <label class="col-md-2 control-label" for="password_confirmation">Confirm Password</label>
               <div class="col-md-10">
-              <input type="password" class="form-control" name="confirm_password"  >
+              <input type="password" class="form-control" name="password_confirmation"  >
             </div>
      			</div>
             <button type="submit" class="btn btn-primary" title="">Register</button>

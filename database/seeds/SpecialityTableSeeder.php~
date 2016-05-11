@@ -1,0 +1,23 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class SpecialityTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        DB::table('speciality')->insert([
+        'created_at' => Carbon\Carbon::now()->toDateTimeString(),
+        'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
+        'firstname' => 'bharath',
+        'lastname' => 'Parlapalli',
+        'description' => 'testpass1',
+        'doctor_id' => 1,
+    ]);
+    }
+}

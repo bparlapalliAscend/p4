@@ -55,6 +55,7 @@ class AuthController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|min:6|confirmed',
+             'speciality_id' => 'required'
         ]);
     }
     
@@ -69,6 +70,20 @@ class AuthController extends Controller
 
     		return redirect(property_exists($this, 'redirectAfterLogout') ? $this->redirectAfterLogout : '/');
 	}
+	
+	   public function showRegistrationForm()
+    {
+        if (property_exists($this, 'registerView')) {
+            return view($this->registerView);
+        }
+        
+        // get list of specialities drop down
+			$specialities = \App\Speciality::orderBy('speciality', 'ASC')->get();
+			foreach($specialities as $speciality) {
+					$specialities_for_dropdown[$speciality->id] = $speciality->speciality;			
+			}
+        return view('auth.register')->with('specialityList',$specialities_for_dropdown);
+    }
 
     /**
      * Create a new user instance after a valid registration.
@@ -82,6 +97,7 @@ class AuthController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+            'speciality_id'=>$data['speciality_id'],
         ]);
     }
 }
