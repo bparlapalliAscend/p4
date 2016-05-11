@@ -13,7 +13,7 @@ class PatientController extends Controller {
 				 $patients = \App\Patient::with('doctor')->where('doctor_id','=',\Auth::id())->paginate(5);
 
 					   	if(!$patients->isEmpty()) {
-						  return view('patients.plist')->with('patients',$patients);  
+						  return view('patients.plist')->with('patients',$patients)->with('doctor', \Auth::user());  
 					}
 					else {							
 			  			return view('patients.plist');					

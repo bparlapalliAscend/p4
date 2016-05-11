@@ -2,7 +2,7 @@
 
 
 @section('title')
- 		Edit Patient Notes for  {{$patient->firstname}} , {{$patient->lastname}}
+ 		Edit Note for Patient {{$patient->firstname}} , {{$patient->lastname}}
 @stop
 
 @section('content')

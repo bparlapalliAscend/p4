@@ -30,7 +30,7 @@
            <div class="form-group">
             <div class="col-md-10">
   					<button class="btn btn-large btn-primary" type="submit">Submit</button>
-  					<a href="/showpatients/{{$patient->id}}}" class="btn btn-warning" role="button">List Notes</a>
+  					<a href="/showpatients/{{$patient->id}}" class="btn btn-warning" role="button">List Notes</a>
       				<a href="/showpatients/{{$patient->id}}/confirmdeletenote/{{$note->id}}" class="btn btn-danger" role="button">Delete Note</a>		
  				 </div>
 				</div>

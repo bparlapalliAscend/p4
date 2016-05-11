@@ -7,6 +7,8 @@
 
 
 @section('content')
+
+<h3> Dr. {{$doctor->name}}'s <small>list of patients </small></h3>
 	@if (isset($patients) && $patients!=null) 
 		<div class="gaptop">
     				 <table class="table table-striped">
@@ -26,9 +28,9 @@
 								  		<td>{{$patient->lastname}}</td>					  
 								 		 <td>{{$patient->created_at}}</td> 
 								 		 <td>{{$patient->doctor->name}}</td> 
-								 		 <td><a href="\editpatient\{{$patient->id}}"> Edit..</a></td> 
-								 		 <td><a href="\showpatients\{{$patient->id}}"> List Notes</a></td> 
-								 		  <td><a href="\showpatients\addnote\{{$patient->id}}"> Add Note</a></td> 
+								 		 <td><a href="/editpatient/{{$patient->id}}"> Edit..</a></td> 
+								 		 <td><a href="/showpatients/{{$patient->id}}"> List Notes</a></td> 
+								 		  <td><a href="/showpatients/addnote/{{$patient->id}}"> Add Note</a></td> 
 									</tr>		
 		 					 @endforeach    
      					</table>
@@ -37,12 +39,12 @@
  		{!! $patients->render() !!}
  		
  		<div class="addmore">
-   			<a href="\addpatient">Add another Patient	</a>
+   			<a href="/addpatient">Add another Patient	</a>
 		</div>
  		
  	@else
  	<div class ="message">
-		You do not have any patients yet. <a href="\addpatient">You can add a patient here</a> and then start adding notes for the patient. 	
+		You do not have any patients yet. <a href="/addpatient">You can add a patient here</a> and then start adding notes for the patient. 	
  	</div>
 	@endif
 	

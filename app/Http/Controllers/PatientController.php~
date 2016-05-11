@@ -154,7 +154,7 @@ public function doDelete($id) {
 				  				 				return view('notes.list')->with('patientnotes',$patientnotes)->with('patient',$patient);
 				  					}
 				  					else {
-				  						return view('notes.list');
+				  						return view('notes.list')->with('patient',$patient);
 				  					}
 				  									  	
 				 		 	}

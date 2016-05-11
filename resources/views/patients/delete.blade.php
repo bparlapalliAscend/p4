@@ -25,26 +25,26 @@
             <div class="form-group">
               <label class="col-md-2 control-label">Firstname</label>
               <div class="col-md-10">
-                <input class="form-control" type="text" name="firstname" placeholder="minimum length 3" value="{{$patient->firstname}}">
+                <input class="form-control" type="text" name="firstname" id ="firstname" placeholder="minimum length 3" value="{{$patient->firstname}}">
               </div>
             </div>
            <div class="form-group">
               <label class="col-md-2 control-label">Lastname</label>
               <div class="col-md-10">
-                <input class="form-control" type="text" name="lastname" placeholder="minimum length 3" value="{{$patient->lastname}}">
+                <input class="form-control" type="text" name="lastname" id ="lastname" placeholder="minimum length 3" value="{{$patient->lastname}}">
               </div>
             </div>
             
              <div class="form-group">
               <label class="col-md-2 control-label">Description</label>
               <div class="col-md-10">
-              <textarea rows="3" class="form-control" name="description" placeholder="minimum length 3">{{$patient->description}}</textarea>
+              <textarea rows="3" class="form-control" name="description" id ="description" placeholder="minimum length 3">{{$patient->description}}</textarea>
               </div>
             </div>
            <div class="form-group">
             <div class="col-md-10">
             <div>
-  					<a href="\editpatient\{{$patient->id}}" class="btn btn-primary" role="button">Go Back to Edit</a>	
+  					<a href="/editpatient/{{$patient->id}}" class="btn btn-primary" role="button">Go Back to Edit</a>	
   					<a href="/editpatient/delete/{{$patient->id}}" class="btn btn-danger" role="button">Confirm Delete</a>		
   					</div>	            
  				 </div>

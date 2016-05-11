@@ -2,7 +2,7 @@
 
 
 @section('title')
- 		Create 
+ 		Edit Patient {{$patient->firstname}}, {{$patient->lastname}}
 @stop
 
 @section('content')
