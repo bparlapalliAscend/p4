@@ -14,4 +14,4 @@ Helps in
 
 ### Links for class:
  - [github link for the project](https://github.com/bparlapalliAscend/p4)
- - [Link to site usage video]()
+ - [Link to site usage video](http://screencast.com/t/Irc80pYTEyR)
