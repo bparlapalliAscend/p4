@@ -19,7 +19,7 @@
       <div class="row">
         <div class="col-lg-4">
           <h2>Keep track of Patients</h2>
-          <p>Add your patients to the database to and begin saving notes for them. </p>
+          <p>Add your patients to the database and begin saving notes for them. </p>
           
         </div>
         <div class="col-lg-4">

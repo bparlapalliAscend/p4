@@ -13,5 +13,5 @@ Helps in
   - [Jquery](//code.jquery.com/jquery-1.11.0.min.js)
 
 ### Links for class:
- - [Link to the project site](p4.bparlapalli.me)
+ - [Link to the project site](http://p4.bparlapalli.me)
  - [Link to site usage video](http://screencast.com/t/Irc80pYTEyR)
