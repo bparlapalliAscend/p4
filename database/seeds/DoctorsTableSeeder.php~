@@ -20,7 +20,7 @@ class DoctorsTableSeeder extends Seeder
         'password' => 'testpass1',
         'Speciality_id' => 1,
     ]);
-       DB::table('books')->insert([
+       DB::table('doctors')->insert([
         'created_at' => Carbon\Carbon::now()->toDateTimeString(),
         'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
         'firstname' => 'anil',
@@ -29,7 +29,7 @@ class DoctorsTableSeeder extends Seeder
         'password' => 'testpass2',
         'Speciality_id' => 2,
     ]);
-           DB::table('books')->insert([
+           DB::table('doctors')->insert([
         'created_at' => Carbon\Carbon::now()->toDateTimeString(),
         'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
         'firstname' => 'prahlad',
