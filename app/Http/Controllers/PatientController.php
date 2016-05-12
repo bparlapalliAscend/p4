@@ -16,11 +16,14 @@ class PatientController extends Controller {
 						  return view('patients.plist')->with('patients',$patients)->with('doctor', \Auth::user());  
 					}
 					else {							
-			  			return view('patients.plist');					
+			  			return view('patients.plist')->with('doctor', \Auth::user());;					
 					}
 			 
 		}
 		else {
+			
+						\Session::flash('flash_message','You are not authorized to view that page');
+					     return view('home.index');
 			
 		}
 	}
