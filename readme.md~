@@ -1,4 +1,4 @@
-# Vaadiya
+# Vaaidya
 
 This website is a tool for doctors to keep track of their diagnoses for their patients. Use the site to create patients, edit patient details, add notes for patients, edit notes and easily retreive patient notes.
 
