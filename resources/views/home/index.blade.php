@@ -19,12 +19,12 @@
       <div class="row">
         <div class="col-lg-4">
           <h2>Keep track of Patients</h2>
-          <p>Add your patients to the database and you can edit/search for them - coming soon - the site can email your patients when you update their status of information. </p>
+          <p>Add your patients to the database to and begin saving notes for them. </p>
           
         </div>
         <div class="col-lg-4">
           <h2>Add and edit notes for your patients</h2>
-          <p>As you add patients, you can also keep track of their progress by adding notes periodically. The notes are only visible to the doctor and are confidential - coing soon - ability to share select notes with your patients (requires Patient email address)</p>
+          <p>As you add patients, you can also keep track of their progress by adding notes periodically. The notes are only visible to the doctor and are confidential - coming soon - ability to share select notes with your patients (requires Patient email address)</p>
          
        </div>
         <div class="col-lg-4">
