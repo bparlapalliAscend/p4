@@ -14,6 +14,6 @@ This website is a tool for doctors to keep track of their diagnoses for their pa
   - [Bootstrap Javascript library]( http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js) 
   - [Jquery](//code.jquery.com/jquery-1.11.0.min.js)
 
-### Links for class:
+### Links for demo:
  - [Link to the project site](http://p4.bparlapalli.me)
  - [Link to site usage video](http://screencast.com/t/Irc80pYTEyR)
